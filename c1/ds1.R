@@ -4,7 +4,7 @@
 v1 = c('A', 'B','C')   #create a vector
 v1   #print the vector
 class(v1)  #print the class of vector
-(v2 = c(1,2,3))
+(v2 = c(1,2,3))#round bracket, create and print
 v2
 class(v2)
 (v3 = c(TRUE, FALSE, TRUE))
@@ -12,6 +12,8 @@ class(v3)
 V3a <- c(T,F,T) #TRUE - T, FALSE-F
 v4 = 100:200
 length(v4)
+?class
+help(class)
 v4
 v5 = seq(1,10,2)
 v4; v5  #two commands seperated by semicolon
@@ -84,6 +86,7 @@ grades = c('A','B','C','F')
 
 rnorm(n=10, mean=50, sd=10)  #normal distributed,10 nos, mean, stddev
 floor(12.67)  #remove decimals
+?rnorm
 
 marks=floor(rnorm(4,50,10))
 students = data.frame(rollno, name, course, dept, marks, gender, grades)
@@ -111,7 +114,9 @@ table(df$course)
 str(df)
 #factor is a category in R
 df[1:2,]  # first 2 rows, all columns
-df[,1:3]  # 1 to 3 columns, all rows
+df[,1:3]  # 1 to 3 columns, all rowou
+df[df$course == "M" c("MBA""BBA")]
+
 #names should be character
 df$name = as.character(df$name)
 str(df)  #see the structure now
